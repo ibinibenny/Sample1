@@ -1,7 +1,4 @@
 #to print and find sum of odd no.s b/w 1 & 50
-
-
-
 a=1
 b=50
 s=0
