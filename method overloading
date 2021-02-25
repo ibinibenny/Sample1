@@ -1,0 +1,29 @@
+Polymorphism : -
+
+        Polymorphism is based on the greek words Poly (many) and morphism (forms).  Wewill create a structure that can take or use many forms of objects. Polymorphism can be referred as the process of taking many forms by a same object.
+
+1. Compile time Polymorphism
+
+2. Runtime Polymorphism
+
+Method overloading : -
+
+In Python you can define a method in such a way that there are multiple waysto call it. Given a single method or function, we can specify the number of parameters ourself. Depending on the function definition, it can be called with zero, one, two or more parameters. This is known as method overloading. Example :
+
+class Human:
+ 
+    def sayHello(self, name=None):
+ 
+        if name is not None:
+            print 'Hello ' + name
+        else:
+            print 'Hello '
+ 
+# Create instance
+obj = Human()
+ 
+# Call the method
+obj.sayHello()
+ 
+# Call the method with a parameter
+obj.sayHello('Guido')
