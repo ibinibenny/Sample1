@@ -9,3 +9,18 @@ class Student:
 
 std = Student()
 std.tostring()
+
+
+
+class Student:
+    name = input('enter the name:') # class attribute
+    
+    def __init__(self):
+        self.age = 20  # instance attribute
+
+    @staticmethod
+    def tostring():
+        print('Student Class')
+
+stud=Student()
+stud.tostring()
