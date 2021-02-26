@@ -1,0 +1,11 @@
+import functools
+l1=range(4)
+z=iter(l1)
+print(z.__next__())
+print(z.__next__())
+l2=list(map(lambda x:x**2,l1))
+print(l2)
+l3=list(filter(lambda x:x>2,l2))
+print(l3)
+l4=functools.reduce(lambda x,y:x*y,l3)
+print(l4)
