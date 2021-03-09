@@ -1,0 +1,41 @@
+Thread:
+
+In computing, a process is an instance of a computer program that is being executed. Any process has 3 basic components:
+
+    An executable program.
+    The associated data needed by the program (variables, work space, buffers, etc.)
+    The execution context of the program (State of process)
+
+A thread is an entity within a process that can be scheduled for execution. 
+Also, it is the smallest unit of processing that can be performed in an OS (Operating System).
+In simple words, a thread is a sequence of such instructions within a program that can be executed independently of other code.
+
+
+The threading module builds on the low-level features of thread to make working with threads. 
+Using threads allows a program to run multiple operations concurrently in the same process space.
+
+Multithreading is defined as the ability of a processor to execute multiple threads concurrently.
+
+
+Threading Example:
+
+import threading
+import time
+
+def worker():
+    print(threading.currentThread().getName(), 'Starting')
+    time.sleep(2)
+    print (threading.currentThread().getName(), 'Exiting')
+
+def my_service():
+    print (threading.currentThread().getName(), 'Starting')
+    time.sleep(3)
+    print (threading.currentThread().getName(), 'Exiting')
+
+t = threading.Thread(name='my_service', target=my_service)
+w = threading.Thread(name='worker', target=worker)
+w2 = threading.Thread(target=worker) # use default name
+
+w.start()
+w2.start()
+t.start()
