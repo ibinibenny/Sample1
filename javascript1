@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<h3> addition </h3>
+</head>
+<body>
+	<p id="demo"> </p>
+	<p>
+	x:
+	<input type="text" id="var1"> </p>
+	<p>
+	y:
+	<input type="text" id="var2"> </p>
+	<p>
+	<button onclick="result()"> Result: </button>
+	<input type="text" id="add">
+	</p> 
+	<script>
+		function result()
+		{
+			var x=5;
+			document.getElementById("var1").value=x;
+			var y=3;
+			document.getElementById("var2").value=y; 
+			document.getElementById("add").value=x+y;
+		}	
+	</script>
+</body>
+</html>
