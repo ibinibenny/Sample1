@@ -1,0 +1,54 @@
+3 Places to put JavaScript code
+
+    Between the body tag of html
+    Between the head tag of html
+    In .js file (external javaScript)
+
+ Between the body tag of html:
+ 
+ <html>  
+<body>  
+<script type="text/javascript">  
+ alert("Hello Javatpoint");  
+</script>  
+</body>  
+</html> 
+
+Between the head tag of html
+
+<html>  
+<head>  
+<script type="text/javascript">  
+function msg(){  
+ alert("Hello Javatpoint");  
+}  
+</script>  
+</head>  
+<body>  
+<p>Welcome to Javascript</p>  
+<form>  
+<input type="button" value="click" onclick="msg()"/>  
+</form>  
+</body>  
+</html>  
+
+
+In .js file (external javaScript)
+
+index.html
+    <html>  
+    <head>  
+    <script type="text/javascript" src="message.js"></script>  
+    </head>  
+    <body>  
+    <p>Welcome to JavaScript</p>  
+    <form>  
+    <input type="button" value="click" onclick="msg()"/>  
+    </form>  
+    </body>  
+    </html>  
+    
+ message.js
+ function msg(){  
+ alert("Hello Javatpoint");  
+} 
