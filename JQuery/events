@@ -1,0 +1,89 @@
+Mouse Events:
+
+Click():$(selector).click(function) 
+
+
+<!DOCTYPE html>  
+<html>  
+<head>  
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>  
+<script>  
+$(document).ready(function(){  
+    $("p").click(function(){  
+        alert("This paragraph was clicked.");  
+    });  
+});  
+</script>  
+</head>  
+<body>  
+<p>Click on the statement.</p>  
+</body>  
+</html> 
+
+
+Dbclick():
+
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("p").dblclick(function(){
+    alert("The paragraph was double-clicked.");
+  });
+});
+</script>
+</head>
+<body>
+
+<p>Double-click on this paragraph.</p>
+
+</body>
+</html>
+
+
+Mouseenter():
+
+<!DOCTYPE html>    
+<html>    
+<head>    
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>    
+<script>    
+$(document).ready(function(){    
+    $("#h1").mouseenter(function(){    
+       $( "div" ).text( "Mouse entered on heading" ).show().fadeOut( 2000 );   
+    });    
+});    
+</script>    
+</head>    
+<body>    
+<h1 id="h1">Enter this heading.</h1>   
+<div></div>   
+</body>    
+</html>    
+
+Mouseleave():
+
+<!DOCTYPE html>  
+<html>  
+<head>  
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>  
+<script>  
+$(document).ready(function(){  
+    $("p").mouseenter(function(){  
+        $("p").css("background-color", "red");  
+    });  
+    $("p").mouseleave(function(){  
+        $("p").css("background-color", "blue");  
+    });  
+});  
+</script>  
+</head>  
+<body>  
+<p>Move your mouse cursor over this statement.</p>  
+</body>  
+</html>
+
+
+
