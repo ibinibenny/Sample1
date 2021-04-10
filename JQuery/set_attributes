@@ -1,43 +1,52 @@
 
+<!DOCTYPE html>
 <html>
 <head>
-<title>jQuery set attribute example</title>
-   <script type="text/javascript" 
-   src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-   <script type="text/javascript" language="javascript">
-
-   $(document).ready(function() {
-      $("#myimg").attr("alt", "Setting New Image");
-   });
-
-   </script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("button").click(function(){
+    $("img").attr("width",function(n, v){
+      return v - 50;
+    });
+  });
+});
+</script>
 </head>
 <body>
-   <div>
-      <img id="myimg" src="no-image.png" alt="old Image" />
-   </div>
+
+<img src="img_pulpitrock.jpg" alt="Pulpit Rock" width="284" height="213"><br>
+
+<button>Decrease image width by 50px</button>
+
 </body>
 </html>
  
  
  Getattribute():
  
+
+
 <html>
 <head>
-<title>jQuery set attribute example</title>
+<title>jQuery get attribute example</title>
    <script type="text/javascript" 
    src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+   
    <script type="text/javascript" language="javascript">
-
    $(document).ready(function() {
-      $("#myimg").attr("alt", "Setting New Image");
+      var title = $("em").attr("title");
+	  alert(title);
+      $("#divid").text(title);
    });
 
    </script>
 </head>
 <body>
    <div>
-      <img id="myimg" src="baby.jpg" alt="old Image" />
+      <em title=" my title attribute">jQuery get attributes</em>
+      <p id="myid">getting my title attribute- success.</p>
+      <div id="divid"></div>
    </div>
 </body>
 </html>
