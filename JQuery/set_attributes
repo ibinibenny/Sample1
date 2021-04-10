@@ -18,3 +18,26 @@
    </div>
 </body>
 </html>
+ 
+ 
+ Getattribute():
+ 
+<html>
+<head>
+<title>jQuery set attribute example</title>
+   <script type="text/javascript" 
+   src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+   <script type="text/javascript" language="javascript">
+
+   $(document).ready(function() {
+      $("#myimg").attr("alt", "Setting New Image");
+   });
+
+   </script>
+</head>
+<body>
+   <div>
+      <img id="myimg" src="baby.jpg" alt="old Image" />
+   </div>
+</body>
+</html>
