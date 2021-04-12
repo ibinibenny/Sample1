@@ -1,24 +1,40 @@
+
 <!DOCTYPE html>
 <html>
-<head>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script>
-var x = 0;
-$(document).ready(function(){
-  $(window).resize(function(){
-    $("span").text( x+= 1);
-  });
-  $("button").click(function(){
-    $(window).resize();
-  });
-});
-</script>
-</head>
-<body>
-
-<p>Window resized <span>0</span> times.</p>
-
-<button>Trigger resize event for the window</button>
-
-</body>
+    <head>
+        <title>The resize method</title>
+        <script src=
+        "https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+        </script>
+          
+        <!-- jQuery code to show the working of this method -->
+        <script>
+            x = 0;
+            $(document).ready(function() {
+                $(window).resize(function() {
+                    $("p").text(x += 1);
+                });
+            });
+        </script>
+        <style>
+            div {
+                width: 150px;
+                height: 100px;
+                padding: 20px;
+                border: 2px solid green;
+                font-size: 20px;
+            }
+        </style>
+    </head>
+       
+    <body>
+        <div>
+            <!-- press "ctrl" and "+" key together
+            and see the effect -->
+            Welcome to GfG!
+            <br>
+            <p>0</p>
+            times.
+        </div>
+    </body>
 </html>
