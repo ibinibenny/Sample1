@@ -1,0 +1,24 @@
+SELECT column_name(s)
+FROM table_name
+WHERE condition
+GROUP BY column_name(s)
+ORDER BY column_name(s); 
+
+
+Like:-
+
+SELECT * FROM Customers
+WHERE CustomerName LIKE 'a%';
+
+SELECT * FROM Customers
+WHERE CustomerName LIKE '_r%';
+
+Between:-
+
+SELECT * FROM Products
+WHERE Price BETWEEN 10 AND 20;
+
+In:-
+
+SELECT * FROM Customers
+WHERE Country IN ('Germany', 'France', 'UK');
