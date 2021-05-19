@@ -1,0 +1,26 @@
+python3 -m venv my-project-env1
+
+source my-project-env1/bin/activate
+
+pip install django
+
+ cd eshop
+
+
+python3 manage.py makemigrations
+
+python3 manage.py migrate
+
+
+python3 manage.py runserver
+
+
+
+python3 manage.py createsuperuser
+
+
+username:Aromi
+password:Admin@1234
+
+
+
